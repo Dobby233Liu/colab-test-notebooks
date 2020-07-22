@@ -20,7 +20,7 @@
 		<div id="content" class="c card">
 			<div id="fileSelector">
 				<h2>Select a image to evaluate</h2>
-				<form action="./predict_html" method="POST">
+				<form action="./predict_html" method="POST" enctype="multipart/form-data">
 					<input type="file" name="image" accept="image/png,image/jpeg,image/gif">
 					<input type="submit" class="btn primary" name="submit">
 				</form>
