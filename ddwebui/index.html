@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<!-- https://colab.research.google.com/github/Dobby233Liu/colab-test-notebooks/blob/master/DeepDanbooru.ipynb -->
+<!-- https://github.com/Dobby233Liu/eBook/blob/gh-pages/ebook_simple.html -->
+<html lang="en">
+	<head>
+		<title>DeepDanbooru</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Evaluating anime picture tags online.">
+		<meta name="keywords" content="DeepDanbooru, Danbooru, anime">
+		<meta name="author" content="Dobby233Liu, Kichang Kim et al.">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.7.0/modern-normalize.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css" />
+	</head>
+	<body>
+		<div id="title" class="c">
+			<h1>DeepDanbooru</h1>
+		</div>
+		<div id="content" class="c card">
+			<div id="fileSelector">
+				<h2>Select a image to evaluate</h2>
+				<form action="./predict_html" method="POST">
+					<input type="file" name="image" accept="image/png,image/jpeg,image/gif">
+					<input type="submit" class="btn primary" name="submit">
+				</form>
+			</div>
+			<div id="info">
+			    <small id="image_restriction">You can upload JPEG or PNG. Allowed image size depends on server software (Flask) and hosting provider (Google Cloud/Colab + ngrok).</small>
+                <small id="image_usage">Uploaded image is automatically removed from server after evaluating.</small>
+			</div>
+		</div>
+	</body>
+</html>
