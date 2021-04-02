@@ -8,7 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="Evaluate anime pictures' tags online">
 		<meta name="keywords" content="DeepDanbooru, Danbooru, anime">
-		<meta name="author" content="Dobby233Liu, Kichang Kim et al.">
+		<meta name="author" content="Dobby233Liu & Kichang Kim et al.">
 		<!-- todo: norobots -->
 		<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.7.0/modern-normalize.min.css" />-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css" />
@@ -21,7 +21,7 @@
 			<div id="fileSelector">
 				<h2>Select a image to evaluate</h2>
 				<form action="./predict_html" method="POST" enctype="multipart/form-data">
-					<input type="file" name="image" accept="image/png,image/jpeg,image/gif">
+					<input type="file" name="image" accept="image/png,image/jpeg,image/gif" required>
 					<input type="submit" class="btn primary" name="submit">
 				</form>
 			</div>
