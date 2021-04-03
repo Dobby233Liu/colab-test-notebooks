@@ -32,7 +32,8 @@
 		<div id="content" class="card">
 			<div id="fileSelector">
 				<h2>Select a image to evaluate</h2>
-				<form action="./predict_html" method="POST" enctype="multipart/form-data" target="predict">
+				<!--./predict_html-->
+				<form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data" target="predict">
 					<input type="file" name="image" accept="image/png,image/jpeg,image/gif" required>
 					<input type="submit" class="btn primary" name="submit">
 				</form>
