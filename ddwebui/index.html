@@ -17,11 +17,11 @@
 				width: 100%; height: 100%; margin: 0; padding: 0;
 			}
 			#ifContainer {
-				display: flex; width: 100%; height: 100%; flex-direction: column; overflow: hidden;
+				display: flex; width: 100%; min-height: 0px; max-height: 100%; flex-direction: column; overflow: hidden;
 				border: none; margin: 0; padding: 0;
 			}
 			#ifContainer iframe {
-				max-height: 100%; flex-grow: 1; border: none; margin: 0; padding: 0;
+				height: auto; min-height: 0px; flex-grow: 1; border: none; margin: 0; padding: 0;
 			}
 		</style>
 	</head>
@@ -46,7 +46,7 @@
 			</small>
 			</div>
 		</div>
-		<div id="ifContainer"><iframe name="predict"></iframe></div>
+		<div id="ifContainer"><iframe name="predict" src="data:text/html;Result will show in there."></iframe></div>
 		<div>
 			Content by Dobby233Liu, model made by Kichang Kim et al.
 		</div>
